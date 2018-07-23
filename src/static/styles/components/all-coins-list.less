@@ -1,0 +1,104 @@
+.all-coins-list {
+
+    &__item {
+        display: table;
+        width: 100%;
+        margin-bottom: 20px;
+
+        &._header{
+            display: table;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            margin-bottom: 16px;
+            z-index: 300;
+            background-color: white;
+        }
+        
+    }
+
+    &__feature {
+        display: table-cell;
+        width: 19%;
+        padding: 5px;
+        font-size: 14px;
+        border: 2px dashed orange;
+        border-collapse: collapse;
+
+        @media @tablets {
+            width: @width-tablet;
+        }
+
+        @media @phones {
+            width: @width-phones;
+            font-size: 12px;
+            
+        }
+
+        @media @extra-small-phones {
+            font-size: 10px;               
+        }
+
+        &._header {
+            position: relative;
+            border: 2px dashed indigo;   
+
+            &[data-active="true"] {
+                background-color: orange;
+            }
+        }
+
+        &._header:after {
+            content: " ";
+            position: absolute;
+            display: none;
+            top: 47%;
+            right: 12px;
+            width: 7px;
+            height: 7px;
+            border: 1px solid indigo;
+            border-width: 1px 1px 0 0;
+            border-color:  indigo;
+            transform: rotate(-45deg);
+        }
+
+        &._header[data-active="true"]:after {
+            display: block;
+
+            @media @phones {
+                display: none;
+            }
+        }
+
+        &._header[data-order="false"]:after {
+            border-width: 0 0 1px 1px;
+            top: 30%;
+        }
+
+        &._header:hover {
+            cursor: pointer;
+        }
+
+        &._index {
+            width: 6%;
+
+            @media @phones {
+                width: 17%;
+            }
+        }
+
+        &._available-supply {
+            @media @tablets {
+                display: none;
+            }
+        }
+
+        &._volume {
+            @media @phones {
+                display: none;
+            }
+        }
+
+        
+    }
+}

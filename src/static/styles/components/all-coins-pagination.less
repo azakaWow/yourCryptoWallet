@@ -1,0 +1,43 @@
+.all-coins-pagination {
+        margin-bottom: 20px;
+
+
+    &__direction {
+        font-size: 20px;
+        color: #4b0082;
+        cursor: pointer;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:focus {
+            color: #ffa500;
+        }
+
+        &._back {
+            float: left;
+
+            &[data-start="true"] {
+                display: none;
+                pointer-events: none;
+            }
+        }
+
+        &._next {
+            float: right;
+
+            &[data-should-render-next="false"] {
+                display: none;
+                pointer-events: none;
+            } 
+        }
+    }
+
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+}

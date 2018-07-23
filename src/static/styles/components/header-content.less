@@ -1,0 +1,41 @@
+.header-content {
+    width:100%;
+    margin-bottom: 52px;
+    font-weight:  bold;
+
+    @media @phones {
+        margin-bottom: 16px;
+    }
+
+    &__logo {
+         
+        &_orange {
+            font-size: 100px;
+            color: orange;
+
+            @media @tablets {
+                font-size: 80px;
+            }
+
+            @media @phones {
+                font-size: 34px;
+            }
+        }
+
+        &_indigo {
+            margin-top: -30px;
+            font-size: 120px;
+            color: indigo;
+
+            @media @tablets {
+                font-size: 100px;
+            }
+
+            @media @phones {
+                margin-top: -12px;
+                font-size: 40px;
+            }
+        }
+
+    }
+}
