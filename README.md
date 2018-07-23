@@ -8,8 +8,9 @@ For running
 
 
 TODO
--REFACTOR 
-  Refactor media queries to waterfall styles
-- Add
-  All coins search
-  Crypto assets manager
+
+1)REFACTOR 
+  a)Refactor media queries to waterfall styles
+2) Add
+  a)All coins search
+  b)Crypto assets manager
