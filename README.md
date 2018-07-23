@@ -10,7 +10,7 @@ For running
 TODO
 
 
-1)Refactor media queries to waterfall styles
+1)Refactor media queries to waterfall style
 
 2)Add all coins search and crypto assets manager
 
